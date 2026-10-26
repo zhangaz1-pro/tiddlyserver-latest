@@ -2,14 +2,14 @@
 
 SOURCE="TiddlyWiki5-Jermolene"
 TARGET="tiddlywiki-production"
-VERSION="5.3.7"
+VERSION="5.4.1"
 
 rm -rf $TARGET-client
 rm -rf $TARGET-server
 
 ([ -d "$TARGET-client" ] || [ -d "$TARGET-server" ]) && echo "Output folder already exists" && exit 1
 
-# rm -rf $SOURCEgss
+# rm -rf $SOURCE
 # git clone https://github.com/Jermolene/TiddlyWiki5 $SOURCE
 (cd $SOURCE && git checkout v$VERSION)
 #  tags/v$VERSION

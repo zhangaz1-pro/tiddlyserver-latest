@@ -1,6 +1,7 @@
 #!/bin/bash
 
-GLOBAL="/Users/zhangaz1/workspace/myPrivate/zhangaz1-pro/tiddlywikis/global"
+GLOBAL="/root/myspace/zhangaz1-pro/tiddlywikis/global"
+# GLOBAL="/Users/zhangaz1/workspace/myPrivate/zhangaz1-pro/tiddlywikis/global"
 
 (cd $GLOBAL/plugins && rm -rf tiddlywiki)
 cp -R tiddlywiki-production-server/plugins/tiddlywiki/ $GLOBAL/plugins/tiddlywiki
